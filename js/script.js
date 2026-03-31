@@ -25,6 +25,16 @@ function calculate() {
 
   document.getElementById("result").innerText = formatted;
   document.getElementById("profit").innerText = formattedProfit;
+
+  const profitElement = document.querySelector(".profit");
+  profitElement.classList.remove("positive", "negative", "neutral");
+  if (profit > 0) {
+    profitElement.classList.add("positive");
+  } else if (profit < 0) {
+    profitElement.classList.add("negative");
+  } else {
+    profitElement.classList.add("neutral");
+  }
 }
 
 // usado IA para aprender

@@ -57,3 +57,18 @@ body {
   text-align: center;
   font-size: 1rem;
 }
+
+.result .profit.positive {
+  color: green;
+  font-weight: bold;
+}
+
+.result .profit.negative {
+  color: red;
+  font-weight: bold;
+}
+
+.result .profit.neutral {
+  color: #333; 
+  font-weight: normal;
+}
