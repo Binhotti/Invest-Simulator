@@ -1,30 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invest Simulator</title>
-    <link rel="stylesheet" href="">
-</head>
-<body>
-    <label>Initial Value (R$)</label>
-      <input type="number" id="initial" placeholder="1000">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Invest Simulator 💰</h1>
 
-      <label>Monthly Rate (%)</label>
-      <input type="number" id="rate" placeholder="5">
+      <div class="form">
+        <label>Valor Inicial (R$)</label>
+        <input type="number" id="initial" placeholder="1000" />
 
-      <label>Time (months)</label>
-      <input type="number" id="time" placeholder="12">
+        <label>Taxa Mensal (%)</label>
+        <input type="number" id="rate" placeholder="5" />
 
-      <button onclick="calculate()">Calculate</button>
+        <label>Tempo (mês)</label>
+        <input type="number" id="time" placeholder="12" />
+
+        <button onclick="calculate()">Calcular</button>
+      </div>
     </div>
 
     <div class="result">
-      <h2>Final Value:</h2>
+      <h2>Valor Final:</h2>
       <p id="result">R$ 0.00</p>
+      <h2>Lucro:</h2>
+      <p id="profit">R$ 0.00</p>
     </div>
-  </div>
-
-  <script src="./js/script.js"></script>
-</body>
+    
+    <script src="./js/script.js"></script>
+  </body>
 </html>
