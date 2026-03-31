@@ -6,6 +6,7 @@
     <title>Invest Simulator</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <div class="container">
       <h1>Invest Simulator 💰</h1>
@@ -13,13 +14,12 @@
       <div class="form">
         <label>Valor Inicial (R$)</label>
         <input type="number" id="initial" />
-        
+
         <label>Contribuição Mensal (R$)</label>
         <input type="number" id="monthly" />
 
         <label>Taxa Mensal (%)</label>
         <input type="number" id="rate" />
-
 
         <label>Tempo (mês)</label>
         <input type="number" id="time" />
@@ -38,6 +38,12 @@
       </div>
     </div>
 
-    <script src="./js/script.js"></script>
+    <div id="chart-container">
+      <canvas id="chart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

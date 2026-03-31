@@ -9,7 +9,6 @@ body {
 .container h1 {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 80px;
 }
 
 .container .form {
@@ -71,4 +70,25 @@ body {
 .result .profit.neutral {
   color: #333; 
   font-weight: normal;
+}
+
+#chart-container {
+  display: none;
+  max-width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  background: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#chart-container {
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#chart-container.show {
+  display: block;
+  opacity: 1;
 }
